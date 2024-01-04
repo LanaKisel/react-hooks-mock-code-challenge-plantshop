@@ -1,11 +1,7 @@
 import React, {useState} from "react";
 
-function Search({onSearch}) {
-
-  const [searchedItem, setSearchedItem]= useState("")
-
+function Search({onSearch, searchedItem}) {
   function handleChange(e) { 
-    setSearchedItem(e.target.value)
     onSearch(e.target.value)
   }
 

@@ -26,7 +26,7 @@ function PlantPage() {
   return (
     <main>
       <NewPlantForm onAddPlants={handleAddPlants}/>
-      <Search onSearch={handleSearch}/>
+      <Search onSearch={handleSearch} searchedItem={searchedItem}/>
       <PlantList plants={plants} searchedItem={searchedItem}  />
     </main>
   );
